@@ -1,0 +1,226 @@
+@font-face {
+  font-family: Acme;
+  src: url(../../fonts/Acme-Regular.ttf);}
+@font-face {
+  font-family: Lato;
+  src: url(../../fonts/Lato-Regular.ttf);}
+html {
+  scroll-behavior: smooth;}
+body {
+    font-family: 'Lato', sans-serif;
+    color: #777;
+    line-height: 1.8;}
+
+h3 {margin-bottom: 0rem ;
+    margin: 10px ;
+    font-size: 24px;}
+
+.container {
+  max-width: 980px;
+}
+
+.image{
+  align-self: center;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 50%;}
+
+h1, h2, h3, h4, h5, p {
+  margin-bottom: 2rem;}
+
+.nav{
+      position: fixed;
+      background-color: #333;
+      z-index: 999;
+      width: 100%;}
+
+.nav-wrap {  
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+}
+
+/* maga a navbar formázása */
+#example-two { 
+      margin: 0 auto; 
+      list-style: none; 
+      position: relative;}
+#example-two li { 
+      display: inline-block;}
+#example-two li a { 
+      position: relative; 
+      z-index: 200; 
+      color: white; 
+      font-size: 20px; 
+      display: block; 
+      float: left; 
+      padding: 6px 10px 4px 10px;
+      text-decoration: none;
+      text-transform: uppercase;}
+.ie6 #example-two li, .ie7 #example-two li {
+      display: inline;}
+
+
+/* magic line csúszka formázás */
+#example-two #magic-line-two { 
+      position: absolute; 
+      top: 0; 
+      left: 0; 
+      width: 100px; 
+      background: grey; 
+      z-index: 100; 
+      -moz-border-radius: 3px; 
+      -webkit-border-radius: 3px;
+      border-radius: 3px;}
+
+.changed {
+  font-size: 300px;
+  color: green;}
+
+.scroller {
+  width: 150px;
+  height: auto;
+  background-color: black;
+  color: white;
+  position: fixed;
+  top: 200px;}
+
+.column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;}
+@media screen and (max-width: 600px) {
+  .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;}}
+.columng a img {
+  opacity: 0.8;
+  transition: 1s;}
+.columng a img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  overflow: hidden;}
+.columng {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 8px;}
+.columng img {
+  margin-top: 16px;
+  vertical-align: middle;
+  width: 100%;}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .columng {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%; }}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columng {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;}}
+
+.parallax1 {
+          background-image: url("../../imgs/final/bg1.jpg");
+          min-height: 58rem;
+          height: 100%;
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          opacity: 0.7;}
+.parallax2 {
+          background-image: url("../../imgs/final/portfolio.jpg");
+          min-height: 400px; 
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          opacity: 0.7;
+          letter-spacing: 10px;
+          position: relative;
+          font-size: 36px;
+          color: #f2f2f2;}
+.parallax3 {
+          background-image: url("../../imgs/final/contact.jpg");
+          min-height: 400px; 
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          opacity: 0.7;
+          letter-spacing: 10px;
+          position: relative;
+          font-size: 36px;
+          color: #f2f2f2;}
+.parallax-center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.flexbox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;}
+.flexbox > div {
+  margin-top: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+  overflow: hidden;}
+.col-1{
+  flex: 1;}
+.col-2{
+  flex: 2;}
+.col-3{
+  flex: 3;}
+.col-4{
+  flex: 4;}
+.col-5{
+  flex: 5;}
+.col-6{
+  flex: 6;}
+.col-7{
+  flex: 7;}
+.col-8{
+  flex: 8;}
+.col-9{
+  flex: 9;}
+.col-10{
+  flex: 10;}
+.col-11{
+  flex: 11;}
+.col-12{
+  flex: 12;}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 5rem;
+  left: 0px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #2f4f4f;
+  color: white;
+  cursor: pointer;
+  padding: 15px;}
+
+@media screen and (max-width: 640px) {
+    .maintitle {
+        font-size: 2rem;        
+    }
+}
+
+.whitetext {
+  color: white;
+}
